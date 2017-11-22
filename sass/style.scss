@@ -1,0 +1,437 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:700i|Open+Sans:300,400,600,700,800');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+
+$main-font: 'Open Sans', sans-serif;
+$logo-font: 'Merriweather', serif;
+
+$fontColorNoBackgrounds: #959595;
+$fontColorWithBackgrounds: #FFF;
+
+$box-col-1: #F5989D;
+$box-col-2: #615F7D;
+$box-col-3: #BD8CBF;
+$box-col-4: #82CA9C;
+
+$reasonsBackground: #82CA9C;
+
+@mixin outlineFucker($clr) {
+	outline: 1px solid $clr;
+}
+
+/* 
+
+List of Contents 
+	_GENERAL 
+	_HEADER 
+	_BOXES
+	_CAR 
+	_REASONS 
+	_SALES 
+	_FOOTER
+*/
+
+/* _GENERAL */
+
+* {
+	// @include outlineFucker(red);
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: $main-font;
+}
+
+/* _HEADER */
+
+header {
+	height: 100vh;
+	min-height: 500px;
+	width: 100%;
+	position: relative;
+	background: url(../images/jumbotron.jpg) 0/cover no-repeat;
+	color: $fontColorWithBackgrounds;
+	.logo {
+		font-family: $logo-font;
+		display: inline-block;
+		position: absolute;
+		top: 2.5%;
+		left: 17.5%;
+		height: 42px;
+		p {
+			float: right;
+			top: -10px;
+			font-size: 21px;
+			line-height: 42px;
+			margin: 0 5px;
+		}
+	}
+	.slogan {	
+		position: absolute;
+		display: inline;
+		top: 45%;
+		margin: 0 56.4% 0 17.5%;
+		min-width: 400px;
+		h1 {
+			margin: 0;
+			font-weight: 300;
+			font-size: 3em;
+		}
+		p {
+			font-size: .7em;
+		}
+	}
+	>p { /* aside - PERFECT TAKPAPP.COM */
+		position: absolute;
+		display: inline-block;
+		top: 45%;
+		left: -4%;
+		transform: rotate(-90deg);
+		transform-origin: 100% 0%;
+		text-transform: uppercase;
+		font-weight: 300;
+		font-size: 10px;
+		span {
+			padding-left: 8px;
+			font-weight: 600;
+		}
+	}
+	.iphone {
+		
+		position: absolute;
+		top: 77%;
+		left: 67%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+.container {
+	padding: 80px 15.8vw;
+	position: relative;
+	p {
+		font-size: 14px;
+		color: $fontColorNoBackgrounds;
+	}
+	h2 {
+		font-weight: 300;
+		font-size: 35px;
+	}
+	p, h2, h6, {
+		padding-left: 1.7vw;
+		margin: 0 auto 30px; 
+	}
+	h6 {
+		font-weight: 600; 
+		font-size: 13px;
+	}
+
+	button {
+		margin: 0 0 10px 1.7vw;
+	}
+	span { /* aside - TAKPAPP.COM */
+		position: absolute;
+		top: 18%;
+		left: 0;
+		display: inline-block;
+		transform: rotate(-90deg);
+		transform-origin: 100% 0%;
+		text-transform: uppercase;
+		font-size: 10px;
+		font-weight: 600;
+		color: $fontColorNoBackgrounds;
+	}
+
+}
+
+
+
+/* _BOXES*/
+
+.boxes {
+	h2 {
+		font-weight: 300;
+		font-size: 30px;
+	}
+	p {
+		font-size: 13px;
+	}
+	a {
+		font-weight: 700; 
+		font-size: 14px;
+		text-decoration: none;
+		position: absolute;
+		bottom: 0;
+		left: 40px;
+	}
+
+	i {
+		position: absolute;
+		bottom: 0;
+		right: 40px;
+		font-size: 18px; 
+	}
+
+	p, h2, a, i {
+		color: $fontColorWithBackgrounds;
+		margin: 0 auto 30px; 
+	}
+	[class*="box-"] {
+		height: 300px;
+		padding: 50px 30px;
+		position: relative;
+		&:hover {
+			transition: 0.4s;
+			opacity: 0.8;
+		}
+	}
+
+	.fa-heart {
+			opacity: 0;
+			cursor: pointer;
+			&:hover {
+				transition: 0.6s;
+				opacity: 1;
+			}
+		}
+	
+
+	.box-color-1 {background-color: $box-col-1}
+	.box-color-2 {background-color: $box-col-2}
+	.box-color-3 {background-color: $box-col-3}
+	.box-color-4 {background-color: $box-col-4}
+	.box-photo-1 {background: url(../images/box1.jpg) center/cover no-repeat}
+	.box-photo-2 {background: url(../images/box2.jpg) center/cover no-repeat}
+	.box-photo-3 {background: url(../images/box3.jpg) center/cover no-repeat}
+}
+
+
+/* _CAR */
+
+.car {
+background: url(../images/car.jpg) 0/cover no-repeat;
+height: 100vh;
+min-height: 600px;
+position: relative;
+	.slogan {	
+			position: absolute;
+			display: inline;
+			top: 45%;
+			margin: 0 56.4% 0 17.5%;
+			min-width: 400px;
+			color: $fontColorWithBackgrounds;
+			h1 {
+				margin: 0;
+				font-weight: 300;
+				font-size: 3em;
+			}
+			p {
+				font-size: .7em;
+			}
+			a {
+				text-decoration: none;
+				color: $fontColorWithBackgrounds;
+			}
+		}
+	}
+
+/* _REASONS */
+
+.reasons {
+	background-color: $reasonsBackground;
+	h2, h6, p, span {
+		color: $fontColorWithBackgrounds;
+	}
+}
+
+/* _SALES */
+
+.sales {
+	background-color: #F6F7FA;
+	.saleBox {
+		margin: 10px;
+		padding: 50px 25px;
+		[class*="saleHeadingButton-"] {
+			color: #FFF;
+			background-color: #E1E1E1;
+			border: none;
+			padding: 5px 15px;
+			border-radius: 5px;
+			font-weight: 800;
+			font-size: 11px;
+		}
+		.buy-button {
+			background-color: #82CA9C;
+			border-radius: 3px;
+			font-weight: 700;
+			font-size: 13px;
+			color: #FFF;
+			border: none;
+			padding: 15px 30px;
+		}
+
+		i {
+			padding: 5px;
+			font-size: 1.8em;
+			color: #C5C5C5;
+		}
+		.fa-apple {
+			margin-left: 1.7vw;
+			padding-left: 0;
+		}
+		&:hover {
+			background-color: #FFF;
+			box-shadow: 0 0 50px 3px #BBB;
+			transition: 0.6s;
+			.saleHeadingButton-1 {
+				background-color: #c0392b;
+				transition: 0.4s;
+			}
+			.saleHeadingButton-2 {
+				background-color:  #BD8CBF;
+				transition: 0.4s;
+			}
+			.buy-button {
+			background-color: #27ae60;
+				transition: 0.4s;
+			}
+		}
+	}
+}
+
+/* _FOOTER */
+
+footer {
+	background-color: #192431;
+	color: $fontColorWithBackgrounds;
+	font-size: 13px;
+	h6 {
+		margin: 0;
+		padding: 0;
+	}
+	input {
+		height: 50px;
+		
+		width: 100%;
+	}
+	.emailInput {
+		margin: 0;
+		margin-left: 1.7vw;
+	}
+	.submitButton {
+		background-color: #8C9;
+		color: #FFF;
+		font-size: 25px;
+		border: none; 
+		cursor: pointer;
+		margin: 0;
+	}
+
+	.contactParagraph {
+		color: #FFF;
+		font-size: 13px;
+	}
+	.funnyParagraph {
+		font-size: 12px;
+		color: #57697F;
+		margin: 10px 0;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin-left: 1.7vw;
+		li {
+			padding-bottom: 10px;
+			a {
+				color: inherit;
+				text-decoration: none;
+				padding-bottom: 10px;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	header {
+		.logo {margin-top: 5vh;}
+		.iphone {
+			top: 80%;
+			left: 70%;
+		}
+		.slogan {
+			h1 {font-size: 50px;}
+			p {font-size: 1em;}
+		}
+		>p { /* aside - PERFECT TAKPAPP.COM */
+			left: -9%;
+			
+		}
+	}
+	.boxes {
+		h2 {font-size: 35px;}
+		p {font-size: 1.3em;}
+		i {font-size: 35px;}
+	}
+	.car {
+		.slogan {
+			top: 10%;
+			h1 {font-size: 3em;}
+			p {font-size: 1.2em;}
+		}
+	}
+	.container {
+		p {font-size: 1.5em;}
+		h2 {font-size: 40px;}
+		h6 {font-size: 1.5em;}
+		span {font-size: 10px;}
+	}
+	footer {
+		a {font-size: 16px;}
+		.funnyParagraph {margin-bottom: 40px;}
+	}
+}
+
+@media (max-width: 767px) {
+	header {
+		.logo {margin-top: 5vh;}
+		.iphone {
+			top: 90%;
+			left: 80%;
+		}
+		.slogan {
+			top: 30%;
+			h1 {font-size: 60px;}
+			p {font-size: 1.2em;}
+		}
+		>p { /* aside - PERFECT TAKPAPP.COM */
+			top: 35%;
+			left: -12%;
+
+		}
+
+	}
+	
+	.boxes {
+		h2 {font-size: 45px;}
+		p {font-size: 1.5em;}
+		i {font-size: 40px;}
+		a {font-size: 1.2em;}
+	}
+	.car {.slogan {
+			top: 10%;
+			h1 {font-size: 3.3em;}
+			p {font-size: 1.3em;}
+			a {font-size: 1.3em;}
+		}
+	}
+	.container {
+		p {font-size: 1.7em;}
+		h2 {font-size: 45px;}
+		h6 {font-size: 2em;}
+		span {font-size: 10px;}
+	}
+	footer {
+		.funnyParagraph {margin-bottom: 40px;}
+		ul {margin-bottom: 40px;}
+		a {font-size: 20px;}
+	}
+}

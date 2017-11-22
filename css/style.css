@@ -1,0 +1,357 @@
+@import url("https://fonts.googleapis.com/css?family=Merriweather:700i|Open+Sans:300,400,600,700,800");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+/* 
+
+List of Contents 
+	_GENERAL 
+	_HEADER 
+	_BOXES
+	_CAR 
+	_REASONS 
+	_SALES 
+	_FOOTER
+*/
+/* _GENERAL */
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif; }
+
+/* _HEADER */
+header {
+  height: 100vh;
+  min-height: 500px;
+  width: 100%;
+  position: relative;
+  background: url(../images/jumbotron.jpg) 0/cover no-repeat;
+  color: #FFF; }
+  header .logo {
+    font-family: "Merriweather", serif;
+    display: inline-block;
+    position: absolute;
+    top: 2.5%;
+    left: 17.5%;
+    height: 42px; }
+    header .logo p {
+      float: right;
+      top: -10px;
+      font-size: 21px;
+      line-height: 42px;
+      margin: 0 5px; }
+  header .slogan {
+    position: absolute;
+    display: inline;
+    top: 45%;
+    margin: 0 56.4% 0 17.5%;
+    min-width: 400px; }
+    header .slogan h1 {
+      margin: 0;
+      font-weight: 300;
+      font-size: 3em; }
+    header .slogan p {
+      font-size: .7em; }
+  header > p {
+    /* aside - PERFECT TAKPAPP.COM */
+    position: absolute;
+    display: inline-block;
+    top: 45%;
+    left: -4%;
+    transform: rotate(-90deg);
+    transform-origin: 100% 0%;
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 10px; }
+    header > p span {
+      padding-left: 8px;
+      font-weight: 600; }
+  header .iphone {
+    position: absolute;
+    top: 77%;
+    left: 67%;
+    transform: translate(-50%, -50%); }
+
+.container {
+  padding: 80px 15.8vw;
+  position: relative; }
+  .container p {
+    font-size: 14px;
+    color: #959595; }
+  .container h2 {
+    font-weight: 300;
+    font-size: 35px; }
+  .container p, .container h2, .container h6 {
+    padding-left: 1.7vw;
+    margin: 0 auto 30px; }
+  .container h6 {
+    font-weight: 600;
+    font-size: 13px; }
+  .container button {
+    margin: 0 0 10px 1.7vw; }
+  .container span {
+    /* aside - TAKPAPP.COM */
+    position: absolute;
+    top: 18%;
+    left: 0;
+    display: inline-block;
+    transform: rotate(-90deg);
+    transform-origin: 100% 0%;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 600;
+    color: #959595; }
+
+/* _BOXES*/
+.boxes h2 {
+  font-weight: 300;
+  font-size: 30px; }
+.boxes p {
+  font-size: 13px; }
+.boxes a {
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  left: 40px; }
+.boxes i {
+  position: absolute;
+  bottom: 0;
+  right: 40px;
+  font-size: 18px; }
+.boxes p, .boxes h2, .boxes a, .boxes i {
+  color: #FFF;
+  margin: 0 auto 30px; }
+.boxes [class*="box-"] {
+  height: 300px;
+  padding: 50px 30px;
+  position: relative; }
+  .boxes [class*="box-"]:hover {
+    transition: 0.4s;
+    opacity: 0.8; }
+.boxes .fa-heart {
+  opacity: 0;
+  cursor: pointer; }
+  .boxes .fa-heart:hover {
+    transition: 0.6s;
+    opacity: 1; }
+.boxes .box-color-1 {
+  background-color: #F5989D; }
+.boxes .box-color-2 {
+  background-color: #615F7D; }
+.boxes .box-color-3 {
+  background-color: #BD8CBF; }
+.boxes .box-color-4 {
+  background-color: #82CA9C; }
+.boxes .box-photo-1 {
+  background: url(../images/box1.jpg) center/cover no-repeat; }
+.boxes .box-photo-2 {
+  background: url(../images/box2.jpg) center/cover no-repeat; }
+.boxes .box-photo-3 {
+  background: url(../images/box3.jpg) center/cover no-repeat; }
+
+/* _CAR */
+.car {
+  background: url(../images/car.jpg) 0/cover no-repeat;
+  height: 100vh;
+  min-height: 600px;
+  position: relative; }
+  .car .slogan {
+    position: absolute;
+    display: inline;
+    top: 45%;
+    margin: 0 56.4% 0 17.5%;
+    min-width: 400px;
+    color: #FFF; }
+    .car .slogan h1 {
+      margin: 0;
+      font-weight: 300;
+      font-size: 3em; }
+    .car .slogan p {
+      font-size: .7em; }
+    .car .slogan a {
+      text-decoration: none;
+      color: #FFF; }
+
+/* _REASONS */
+.reasons {
+  background-color: #82CA9C; }
+  .reasons h2, .reasons h6, .reasons p, .reasons span {
+    color: #FFF; }
+
+/* _SALES */
+.sales {
+  background-color: #F6F7FA; }
+  .sales .saleBox {
+    margin: 10px;
+    padding: 50px 25px; }
+    .sales .saleBox [class*="saleHeadingButton-"] {
+      color: #FFF;
+      background-color: #E1E1E1;
+      border: none;
+      padding: 5px 15px;
+      border-radius: 5px;
+      font-weight: 800;
+      font-size: 11px; }
+    .sales .saleBox .buy-button {
+      background-color: #82CA9C;
+      border-radius: 3px;
+      font-weight: 700;
+      font-size: 13px;
+      color: #FFF;
+      border: none;
+      padding: 15px 30px; }
+    .sales .saleBox i {
+      padding: 5px;
+      font-size: 1.8em;
+      color: #C5C5C5; }
+    .sales .saleBox .fa-apple {
+      margin-left: 1.7vw;
+      padding-left: 0; }
+    .sales .saleBox:hover {
+      background-color: #FFF;
+      box-shadow: 0 0 50px 3px #BBB;
+      transition: 0.6s; }
+      .sales .saleBox:hover .saleHeadingButton-1 {
+        background-color: #c0392b;
+        transition: 0.4s; }
+      .sales .saleBox:hover .saleHeadingButton-2 {
+        background-color: #BD8CBF;
+        transition: 0.4s; }
+      .sales .saleBox:hover .buy-button {
+        background-color: #27ae60;
+        transition: 0.4s; }
+
+/* _FOOTER */
+footer {
+  background-color: #192431;
+  color: #FFF;
+  font-size: 13px; }
+  footer h6 {
+    margin: 0;
+    padding: 0; }
+  footer input {
+    height: 50px;
+    width: 100%; }
+  footer .emailInput {
+    margin: 0;
+    margin-left: 1.7vw; }
+  footer .submitButton {
+    background-color: #8C9;
+    color: #FFF;
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    margin: 0; }
+  footer .contactParagraph {
+    color: #FFF;
+    font-size: 13px; }
+  footer .funnyParagraph {
+    font-size: 12px;
+    color: #57697F;
+    margin: 10px 0; }
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 1.7vw; }
+    footer ul li {
+      padding-bottom: 10px; }
+      footer ul li a {
+        color: inherit;
+        text-decoration: none;
+        padding-bottom: 10px; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  header .logo {
+    margin-top: 5vh; }
+  header .iphone {
+    top: 80%;
+    left: 70%; }
+  header .slogan h1 {
+    font-size: 50px; }
+  header .slogan p {
+    font-size: 1em; }
+  header > p {
+    /* aside - PERFECT TAKPAPP.COM */
+    left: -9%; }
+
+  .boxes h2 {
+    font-size: 35px; }
+  .boxes p {
+    font-size: 1.3em; }
+  .boxes i {
+    font-size: 35px; }
+
+  .car .slogan {
+    top: 10%; }
+    .car .slogan h1 {
+      font-size: 3em; }
+    .car .slogan p {
+      font-size: 1.2em; }
+
+  .container p {
+    font-size: 1.5em; }
+  .container h2 {
+    font-size: 40px; }
+  .container h6 {
+    font-size: 1.5em; }
+  .container span {
+    font-size: 10px; }
+
+  footer a {
+    font-size: 16px; }
+  footer .funnyParagraph {
+    margin-bottom: 40px; } }
+@media (max-width: 767px) {
+  header .logo {
+    margin-top: 5vh; }
+  header .iphone {
+    top: 90%;
+    left: 80%; }
+  header .slogan {
+    top: 30%; }
+    header .slogan h1 {
+      font-size: 60px; }
+    header .slogan p {
+      font-size: 1.2em; }
+  header > p {
+    /* aside - PERFECT TAKPAPP.COM */
+    top: 35%;
+    left: -12%; }
+
+  .boxes h2 {
+    font-size: 45px; }
+  .boxes p {
+    font-size: 1.5em; }
+  .boxes i {
+    font-size: 40px; }
+  .boxes a {
+    font-size: 1.2em; }
+
+  .car .slogan {
+    top: 10%; }
+    .car .slogan h1 {
+      font-size: 3.3em; }
+    .car .slogan p {
+      font-size: 1.3em; }
+    .car .slogan a {
+      font-size: 1.3em; }
+
+  .container p {
+    font-size: 1.7em; }
+  .container h2 {
+    font-size: 45px; }
+  .container h6 {
+    font-size: 2em; }
+  .container span {
+    font-size: 10px; }
+
+  footer .funnyParagraph {
+    margin-bottom: 40px; }
+  footer ul {
+    margin-bottom: 40px; }
+  footer a {
+    font-size: 20px; } }
+
+/*# sourceMappingURL=style.css.map */
